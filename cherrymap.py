@@ -65,6 +65,10 @@ for filename in os.listdir(path):
 					# Add tags afterwards
                                         ET.SubElement(service, "rich_text", weight="heavy", scale="h1", foreground="#ced528e828e8").text="\n\nEnumeration";
 
+
+                                        ET.SubElement(service, "rich_text", weight="heavy", scale="h1", foreground="#ced528e828e8").text="\n\n\n\nExploitation";
+
+
 					# Reset text
 					ET.SubElement(service, "rich_text" ).text="\n\n\n\n\n\n\n\n\n\n";
 
