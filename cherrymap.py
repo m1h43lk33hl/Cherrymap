@@ -62,14 +62,20 @@ for filename in os.listdir(path):
 						ET.SubElement(service, "rich_text").text=scr['output']+"\n"
 
 
-					# Add tags afterwards
-                                        ET.SubElement(service, "rich_text", weight="heavy", scale="h1", foreground="#ced528e828e8").text="\n\nEnumeration";
+					# Reset text and add spacing
+                                        ET.SubElement(service, "rich_text" ).text="\n\n\n\n";
+
+					# Enumeration tag
+                                        ET.SubElement(service, "rich_text", weight="heavy", scale="h1", foreground="#ced528e828e8").text="Enumeration";
+
+                                        # Reset text and add spacing
+                                        ET.SubElement(service, "rich_text" ).text="\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+
+					# Exploitation tag
+                                        ET.SubElement(service, "rich_text", weight="heavy", scale="h1", foreground="#ced528e828e8").text="Exploitation";
 
 
-                                        ET.SubElement(service, "rich_text", weight="heavy", scale="h1", foreground="#ced528e828e8").text="\n\n\n\nExploitation";
-
-
-					# Reset text
+					# Reset text and add spacing
 					ET.SubElement(service, "rich_text" ).text="\n\n\n\n\n\n\n\n\n\n";
 
 
